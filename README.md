@@ -1,1 +1,9 @@
-assam flood
+🌊 Assam Flood Prediction System using Machine Learning (XGBoost)
+
+Floods are one of the most frequent and devastating natural disasters in Assam, causing large-scale damage to life, infrastructure, and agriculture every year. This project focuses on building a data-driven flood prediction system that can forecast the likelihood of flooding in the next 24 hours using historical and real-time environmental data.
+
+The system leverages machine learning techniques, particularly the XGBoost classifier, to analyze multiple hydrological and meteorological factors such as rainfall intensity, river water levels, soil moisture, and danger level thresholds. Advanced feature engineering is performed by extracting time-based features (hour, day, month, weekday) and creating domain-specific interaction features that capture the complex relationships responsible for flood events.
+
+To handle real-world challenges such as class imbalance, the project applies SMOTE oversampling, ensuring the model learns flood patterns effectively. A time-aware train–test split is used to avoid data leakage and simulate real forecasting conditions. The model is evaluated using accuracy, recall, F1-score, and ROC-AUC, with special emphasis on recall for flood events, as missing a flood warning can have serious consequences.
+
+The final model achieves high predictive performance and can be easily deployed in real-world applications such as early warning systems, disaster management dashboards, and decision-support tools for government agencies. This project demonstrates the practical application of machine learning for climate risk mitigation and disaster preparedness.
