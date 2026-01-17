@@ -18,7 +18,7 @@ st.set_page_config(
     layout="centered"
 )
 
-OPENWEATHER_API_KEY = "6530f38d3899c3c1fde8cb37e5dbea33"
+# OPENWEATHER_API_KEY = "6530f38d3899c3c1fde8cb37e5dbea33"
 
 # ---------------- DISTRICT COORDINATES ----------------
 district_coords = {
@@ -41,10 +41,10 @@ model = load_model()
 
 # ---------------- WEATHER FETCH FUNCTION ----------------
 def fetch_weather(lat, lon):
-    url = (
-        f"https://api.openweathermap.org/data/2.5/weather"
-        f"?lat={lat}&lon={lon}&appid={OPENWEATHER_API_KEY}&units=metric"
-    )
+    # url = (
+    #     f"https://api.openweathermap.org/data/2.5/weather"
+    #     f"?lat={lat}&lon={lon}&appid={OPENWEATHER_API_KEY}&units=metric"
+    # )
     response = requests.get(url)
     data = response.json()
 
@@ -119,6 +119,12 @@ if st.button("🚨 Predict Flood"):
 
 st.markdown("---")
 st.caption("Assam Flood Prediction | OpenWeather API + ML")
+
+
+
+
+
+
 
 
 
